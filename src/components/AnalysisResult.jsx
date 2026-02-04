@@ -42,11 +42,11 @@ function AnalysisResult({ result, showOnlySuggestions = false }) {
       {showOnlySuggestions && (
         <>
           <h3>💡Suggestions</h3>
-            {result.issues.map((issue, index) => (
+            {result.suggestions.map((s, index) => (
               <SuggestionItem
                 key={index}
                 title={`🛠️Suggestion #${index + 1}`}
-                description={issue.description}
+                description={s.description}
               />
             ))}
         </>
